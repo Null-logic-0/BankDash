@@ -1,0 +1,483 @@
+@media (max-width: 500px) {
+    body {
+        background-color: white;
+    }
+}
+
+.my-cards {
+    padding: 20px;
+}
+
+.my-card__left {
+    max-width: 730px;
+    width: 100%;
+}
+
+.my-cards__main-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.my-card__card {
+    width: 350px;
+    height: 235px;
+    background: linear-gradient(107deg, #4C49ED 2.61%, #0A06F4 101.2%);
+    border-radius: 25px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.my-card__heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-card__heading p {
+    color: #343C6A;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.my-cards__wrapper {
+    max-width: 730px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 20px;
+}
+
+@media (max-width:730px) {
+    .my-cards__wrapper {
+        overflow-x: hidden;
+    }
+}
+
+.card {
+    position: relative;
+}
+
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.card__balance-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__balance-amount {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    align-items: center;
+}
+
+.card__holder,
+.card__valid {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__name,
+.card__date {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.card__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.card__code {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.my-card__card-2 {
+    width: 350px;
+    height: 235px;
+    background-color: white;
+    border-radius: 25px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    color: #343C6A;
+    position: relative;
+}
+
+.card__balance-text-2 {
+    color: #343C6A;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__balance-amount-2 {
+    color: #343C6A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__holder-2,
+.card__valid-2 {
+    color: #718EBF;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__name-2,
+.card__date-2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #343C6A;
+}
+
+.card__bottom-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 25px 25px;
+    border: 1px solid #DFEAF2;
+}
+
+.card__code-2 {
+    color: #343C6A;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.recent-transactions {
+    max-width: 350px;
+    width: 100%;
+    min-height: 235px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.transactions__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 18px 0 18px;
+}
+
+.transactions__text {
+    max-width: 167px;
+    width: 100%;
+}
+
+.deposit {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+.date {
+    color: #718EBF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.transactions__money.negative {
+    color: #FF4B4A;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.transactions__money.positive {
+    color: #41D4A8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* || statistics */
+
+.statistics {
+    padding: 20px;
+}
+
+.statiscits__main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.statistics__info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.statiscits__left {
+    max-width: 730px;
+    width: 100%;
+}
+
+.weekly-activity__wrapper {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 730px;
+    width: 100%;
+    padding: 20px;
+    height: fit-content;
+}
+
+.weekly-activity__wrapper img {
+    max-width: 730px;
+    width: 100%;
+}
+
+.diposit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.diposit p {
+    color: #718EBF;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.withrdaw p {
+    color: #718EBF;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.withrdaw {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle__pink {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF82AC;
+}
+
+.circle__green {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #16DBCC;
+}
+
+.statistics__right {
+    max-width: 350px;
+    width: 100%;
+}
+
+.pie-chart {
+    background-color: white;
+    max-width: 350px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 68px 10px;
+}
+
+
+
+/* || transfer-history */
+
+.transfer-history {
+    padding: 24px;
+}
+
+.transfer-history__main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.transfer__card {
+    max-width: 445px;
+    width: 100%;
+    min-height: 276px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px 15px;
+}
+
+.transfer__profile:hover p,
+.transfer__profile:hover h4 {
+    font-weight: 600;
+}
+
+.transfer__profiles {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.transfer__profile {
+    cursor: pointer;
+    text-align: center;
+    max-width: 96px;
+    width: 100%;
+}
+
+.transfer__profile img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.transfer__profile h4 {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.2s;
+    margin-bottom: 5px;
+}
+
+.transfer__profile p {
+    color: #718EBF;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+.button-next {
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+
+.transfer__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transfer__amount {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.transfer__amount-text {
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.transfer__amount-form {
+    max-width: 265px;
+    width: 100%;
+    position: relative;
+}
+
+.transfer__amount-input {
+    border-radius: 50px;
+    background: #EDF1F7;
+    outline: none;
+    max-width: 265px;
+    width: 100%;
+    height: 50px;
+    padding: 15px 130px 15px 15px;
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.transfer__amount-input::placeholder {
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.transfer__amount-send {
+    width: 125px;
+    height: 50px;
+    border-radius: 50px;
+    background: #1814F3;
+    color: white;
+    box-shadow: 4px 4px 18px -2px rgba(231, 228, 232, 0.80);
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.transfer__amount-send:hover {
+    background-color: #1512c5;
+}
+
+.history__main-wrapper {
+    max-width: 635px;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.history__main-wrapper img {
+    max-width: 635px;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    div {
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .my-card__card-2 {
+        border: 1px solid #DFEAF2;
+    }
+}

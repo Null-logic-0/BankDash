@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/icons/short-logo.svg" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/sidebar-menu.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/transactions.css" />
+    <link rel="stylesheet" href="../styles/account.css" />
+    <link rel="stylesheet" href="../styles/investments.css" />
+    <link rel="stylesheet" href="../styles/credit-cards.css" />
+    <link rel="stylesheet" href="../styles/loans.css" />
+    <link rel="stylesheet" href="../styles/services.css"/>
+    <link rel="stylesheet" href="../styles/setting.css" />
+    <title>BankDash-Transactions</title>
+</head>
+
+<body>
+  
+    <header class="header">
+        <div class="header__main-wrapper">
+            <div class="header__burger-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
+            <div class="header__left">
+                <img src="../assets/icons/main-Logo.svg" alt="main-logo" />
+                <div class="border"></div>
+                <h1 class="header__title">Transactions</h1>
+            </div>
+            <div class="header__right">
+                <div class="header__inputs">
+                    <form action="#" class="header__search">
+                        <input type="search" placeholder="Search for something" class="header__search-input" />
+                    </form>
+                </div>
+                <button class="button-style">
+                    <img src="../assets/icons/settings-02.svg" alt="settings" class="button-style__icon" />
+                </button>
+                <button class="button-style">
+                    <img src="../assets/icons/notification.svg" alt="notifications" class="button-style__icon" />
+                </button>
+                <a href="../pages/setting.html">
+                    <img class="header__profile-picture" src="../assets/images/avatar-image.png"
+                        alt="profile-picture" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="overlay"></div>
+
+    <aside class="side-menu" id="side-menu">
+        <div class="aside__main-wrapper">
+            <div class="aside__bottom">
+                <nav>
+                    <ul class="nav__options">
+                        <li>
+                            <a href="../index.html" class="nav__option">
+                                <img src="../assets/icons/home.svg" alt="icon" class="side-menu__icons" />
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/transactions.html" class="nav__option active">
+                                <img src="../assets/icons/transfer.svg" alt="icon" class="side-menu__icons" />
+                                <p>Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/accounts.html" class="nav__option">
+                                <img src="../assets/icons/user.svg" alt="icon" class="side-menu__icons" />
+                                <p>Accounts</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/investments.html" class="nav__option">
+                                <img src="../assets/icons/economic.svg" alt="icon" class="side-menu__icons" />
+                                <p>Investments</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/credit-cards.html" class="nav__option">
+                                <img src="../assets/icons/credit.svg" alt="icon" class="side-menu__icons" />
+                                <p>Credit Cards</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/loans.html" class="nav__option">
+                                <img src="../assets/icons/loan.svg" alt="icon" class="side-menu__icons" />
+                                <p>Loans</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/services.html" class="nav__option">
+                                <img src="../assets/icons/service.svg" alt="icon" class="side-menu__icons" />
+                                <p>Services</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/privileges.html" class="nav__option">
+                                <img src="../assets/icons/econometrics.svg" alt="icon" class="side-menu__icons" />
+                                <p>My Privileges</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/setting.html" class="nav__option">
+                                <img src="../assets/icons/settings.svg" alt="icon" class="side-menu__icons" />
+                                <p>Setting</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section class="my-cards">
+            <div class="my-cards__main-wrapper">
+                <div class="my-card__left">
+                    <div class="my-card__heading">
+                        <h2 class="h2--style">My Cards</h2>
+                        <p>See All</p>
+                    </div>
+                    <div class="my-cards__wrapper">
+                        <div class="my-card__card card">
+                            <div class="card__top">
+                                <div class="card__balance">
+                                    <p class="card__balance-text">Balance</p>
+                                    <p class="card__balance-amount">$5,756</p>
+                                </div>
+                                <img src="../assets/icons/Chip_Card.svg" alt="chip" />
+                            </div>
+                            <div class="card__middle">
+                                <div class="card__name-wrapper">
+                                    <p class="card__holder">CARD HOLDER</p>
+                                    <p class="card__name">Eddy Cusuma</p>
+                                </div>
+                                <div class="card__validity">
+                                    <p class="card__valid">VALID THRU</p>
+                                    <p class="card__date">12/22</p>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <p class="card__code">3778 **** **** 1234</p>
+                                <img src="../assets/icons/debit.svg" alt="mastercard" />
+                            </div>
+                        </div>
+
+                        <div class="my-card__card-2 card-2">
+                            <div class="card__top">
+                                <div class="card__balance">
+                                    <p class="card__balance-text-2">Balance</p>
+                                    <p class="card__balance-amount-2">$5,756</p>
+                                </div>
+                                <img src="../assets/icons/Chip_Card-black.svg" alt="chip" />
+                            </div>
+                            <div class="card__middle">
+                                <div class="card__name-wrapper">
+                                    <p class="card__holder-2">CARD HOLDER</p>
+                                    <p class="card__name-2">Eddy Cusuma</p>
+                                </div>
+                                <div class="card__validity">
+                                    <p class="card__valid-2">VALID THRU</p>
+                                    <p class="card__date-2">12/22</p>
+                                </div>
+                            </div>
+                            <div class="card__bottom-2">
+                                <p class="card__code-2">3778 **** **** 1234</p>
+                                <img src="../assets/icons/debit.svg" alt="mastercard" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-epxense-section__right">
+                    <h2 class="h2--style">My Expense</h2>
+                    <div class="expense__wrapper">
+                        <span class="expense__number">$12,500</span>
+                        <img src="../assets/icons/my-expense.svg" alt="my-expense-img" class="expense__img"/>
+                    </div>
+                </div>
+        </section>
+        <section class="recent">
+            <div class="recent__main-wrapper">
+                <h2 class="h2--style">Recent Transactions</h2>
+                <div class="transactions__main-wrapper">
+                    <div class="transactions__tabs">
+                        <div class="transaction__tabs-wrapper">
+                            <p class="active">All Transactions</p>
+                            <p>Income</p>
+                            <p>Expense</p>
+                        </div>
+                    </div>
+                    <div class="transactions__table">
+                        <table class="transactions__main-table">
+                            <colgroup>
+                                <col id="col1" />
+                                <col id="col2" />
+                                <col id="col3" />
+                                <col id="col4" />
+                                <col id="col5" />
+                                <col id="col6" />
+                                <col id="col7" />
+                            </colgroup>
+                            <tr>
+                                <th>Description</th>
+                                <th>Transaction ID</th>
+                                <th>Type</th>
+                                <th>Card</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Receipt</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="description-row">
+                                        <img src="../assets/icons/up.svg" alt="arrow-up" />
+                                        <p>
+                                            Spotify Subscription <span> 28 Jan, 12.30 AM </span>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>#12548796</td>
+                                <td>Shopping</td>
+                                <td>1234 ****</td>
+                                <td>28 Jan, 12.30 AM</td>
+                                <td class="negative">-$2,500</td>
+                                <td>
+                                    <button>Download</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="description-row">
+                                        <img src="../assets/icons/down.svg" alt="arrow-down" />
+                                        <p>Freepik Sales <span>25 Jan, 10.40 PM</span></p>
+                                    </div>
+                                </td>
+                                <td>#12548796</td>
+                                <td>Transfer</td>
+                                <td>1234 ****</td>
+                                <td>25 Jan, 10.40 PM</td>
+                                <td class="positive">+$750</td>
+                                <td>
+                                    <button>Download</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="description-row">
+                                        <img src="../assets/icons/up.svg" alt="arrow-up" />
+                                        <p>Mobile Service <span>20 Jan, 10.40 PM</span></p>
+                                    </div>
+                                </td>
+                                <td>#12548796</td>
+                                <td>Service</td>
+                                <td>1234 ****</td>
+                                <td>20 Jan, 10.40 PM</td>
+                                <td class="negative">-$150</td>
+                                <td>
+                                    <button>Download</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="description-row">
+                                        <img src="../assets/icons/up.svg" alt="arrow-up" />
+                                        <p>Wilson <span>15 Jan, 03.29 PM</span></p>
+                                    </div>
+                                </td>
+                                <td>#12548796</td>
+                                <td>Transfer</td>
+                                <td>1234 ****</td>
+                                <td>15 Jan, 03.29 PM</td>
+                                <td class="negative">-$1050</td>
+                                <td>
+                                    <button>Download</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="description-row">
+                                        <img src="../assets/icons/down.svg" alt="arrow-down" />
+                                        <p>Emilly <span>14 Jan, 10.40 PM</span></p>
+                                    </div>
+                                </td>
+                                <td>#12548796</td>
+                                <td>Transfer</td>
+                                <td>1234 ****</td>
+                                <td>14 Jan, 10.40 PM</td>
+                                <td class="positive">+$840</td>
+                                <td>
+                                    <button>Download</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="transactions__pages">
+                        <a href="#" class="transactions__pages-option">
+                            <img src="../assets/icons/prev.svg" alt="icon"/>
+                             Previous
+                        </a>
+                        <a href="#" class="transactions__pages-option active">1</a>
+                        <a href="#" class="transactions__pages-option">2</a>
+                        <a href="#" class="transactions__pages-option">3</a>
+                        <a href="#" class="transactions__pages-option">4</a>
+                        <a href="#" class="transactions__pages-option">
+                            Next 
+                            <img src="../assets/icons/nextb.svg" alt="icon"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../script/sidebar.js"></script>
+
+</body>
+
+</html>

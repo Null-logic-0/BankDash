@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/icons/short-logo.svg" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/sidebar-menu.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/transactions.css" />
+    <link rel="stylesheet" href="../styles/account.css" />
+    <link rel="stylesheet" href="../styles/investments.css" />
+    <link rel="stylesheet" href="../styles/credit-cards.css" />
+    <link rel="stylesheet" href="../styles/loans.css" />
+    <link rel="stylesheet" href="../styles/services.css" />
+    <link rel="stylesheet" href="../styles/setting.css" />
+    <title>BankDash-Investments</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__main-wrapper">
+            <div class="header__burger-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
+            <div class="header__left">
+                <img src="../assets/icons/main-Logo.svg" alt="main-logo" />
+                <div class="border"></div>
+                <h1 class="header__title">Investment</h1>
+            </div>
+            <div class="header__right">
+                <div class="header__inputs">
+                    <form action="#" class="header__search">
+                        <input type="search" placeholder="Search for something" class="header__search-input" />
+                    </form>
+                </div>
+                <button class="button-style">
+                    <img src="../assets/icons/settings-02.svg" alt="settings" class="button-style__icon" />
+                </button>
+                <button class="button-style">
+                    <img src="../assets/icons/notification.svg" alt="notifications" class="button-style__icon" />
+                </button>
+                <a href="../pages/setting.html">
+                    <img class="header__profile-picture" src="../assets/images/avatar-image.png"
+                        alt="profile-picture" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <div class="overlay"></div>
+
+    <aside class="side-menu" id="side-menu">
+        <div class="aside__main-wrapper">
+            <div class="aside__bottom">
+                <nav>
+                    <ul class="nav__options">
+                        <li>
+                            <a href="../index.html" class="nav__option">
+                                <img src="../assets/icons/home.svg" alt="icon" class="side-menu__icons" />
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/transactions.html" class="nav__option">
+                                <img src="../assets/icons/transfer.svg" alt="icon" class="side-menu__icons" />
+                                <p>Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/accounts.html" class="nav__option">
+                                <img src="../assets/icons/user.svg" alt="icon" class="side-menu__icons" />
+                                <p>Accounts</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/investments.html" class="nav__option active">
+                                <img src="../assets/icons/economic.svg" alt="icon" class="side-menu__icons" />
+                                <p>Investments</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/credit-cards.html" class="nav__option">
+                                <img src="../assets/icons/credit.svg" alt="icon" class="side-menu__icons" />
+                                <p>Credit Cards</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/loans.html" class="nav__option">
+                                <img src="../assets/icons/loan.svg" alt="icon" class="side-menu__icons" />
+                                <p>Loans</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/services.html" class="nav__option">
+                                <img src="../assets/icons/service.svg" alt="icon" class="side-menu__icons" />
+                                <p>Services</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/privileges.html" class="nav__option">
+                                <img src="../assets/icons/econometrics.svg" alt="icon" class="side-menu__icons" />
+                                <p>My Privileges</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/setting.html" class="nav__option">
+                                <img src="../assets/icons/settings.svg" alt="icon" class="side-menu__icons" />
+                                <p>Setting</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section class="investments-section">
+            <div class="investments__main-wrapper">
+                <div class="investments-card">
+                    <img src="../assets/icons/Green-money.svg" alt="my balance" />
+                    <div class="investments-card-text">
+                        <p class="investments__type">Total Invested Amount</p>
+                        <p class="investments__expense">$150,000</p>
+                    </div>
+                </div>
+                <div class="investments-card">
+                    <img src="../assets/icons/investment.svg" alt="income" />
+                    <div class="investments-card-text">
+                        <p class="investments__type">Number of Investments</p>
+                        <p class="investments__expense">1,250</p>
+                    </div>
+                </div>
+
+                <div class="investments-card">
+                    <img src="../assets/icons/return.svg" alt="saving" />
+                    <div class="investments-card-text">
+                        <p class="investments__type">Rate of Return</p>
+                        <p class="investments__expense">+5.80%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="investments-statics">
+            <div class="investments-statics__main-wrapper">
+                <div class="investments-statics__left">
+                    <h2 class="h2--style">Yearly Total Investment</h2>
+                    <div class="investments__yearly investments-statics__wrapper">
+                        <img src="../assets/icons/analitics-4.svg" alt="analitics" />
+                    </div>
+                </div>
+                <div class="investments-statics__right">
+                    <h2 class="h2--style">Monthly Revenue</h2>
+                    <div class="investments__monthly investments-statics__wrapper">
+                        <img src="../assets/icons/analitics-5.svg" alt="analitics" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-investments-trending">
+            <div class="my-investments-trending__main-wrapper">
+                <div class="my-investments">
+                    <h2 class="h2--style">My Investments</h2>
+
+                    <div class="my-investments__main-wrapper">
+                        <div class="my-investments__row">
+                            <div class="my-investments__row-icon-title">
+                                <img src="../assets/icons/apple-store.svg" alt="apple" />
+                                <div class="my-investments__row-text">
+                                    <p class="my-investments__row-heading">Apple Store</p>
+                                    <p class="my-investments__row-info">
+                                        E-commerce, Marketplace
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-investments__row-text my-investments__row-middle">
+                                <p class="my-investments__row-heading">$54,000</p>
+                                <p class="my-investments__row-info">Envestment Value</p>
+                            </div>
+
+                            <div class="my-investments__row-text">
+                                <p class="my-investments__row-heading positive">+16%</p>
+                                <p class="my-investments__row-info">Return Value</p>
+                            </div>
+                        </div>
+
+                        <div class="my-investments__row">
+                            <div class="my-investments__row-icon-title">
+                                <img src="../assets/icons/G.svg" alt="google" />
+                                <div class="my-investments__row-text">
+                                    <p class="my-investments__row-heading">Samsung Mobile</p>
+                                    <p class="my-investments__row-info">
+                                        E-commerce, Marketplace
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-investments__row-text my-investments__row-middle">
+                                <p class="my-investments__row-heading">$25,300</p>
+                                <p class="my-investments__row-info">Envestment Value</p>
+                            </div>
+
+                            <div class="my-investments__row-text">
+                                <p class="my-investments__row-heading negative">-4%</p>
+                                <p class="my-investments__row-info">Return Value</p>
+                            </div>
+                        </div>
+
+                        <div class="my-investments__row">
+                            <div class="my-investments__row-icon-title">
+                                <img src="../assets/icons/tesla.svg" alt="tesla" />
+                                <div class="my-investments__row-text">
+                                    <p class="my-investments__row-heading">Tesla Motors</p>
+                                    <p class="my-investments__row-info">Electric Vehicles</p>
+                                </div>
+                            </div>
+
+                            <div class="my-investments__row-text my-investments__row-middle">
+                                <p class="my-investments__row-heading">$8,200</p>
+                                <p class="my-investments__row-info">Envestment Value</p>
+                            </div>
+
+                            <div class="my-investments__row-text">
+                                <p class="my-investments__row-heading positive">+25%</p>
+                                <p class="my-investments__row-info">Return Value</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trending">
+                    <h2 class="h2--style">Trending Stock</h2>
+
+                    <div class="trending__main-wrapper">
+                        <table class="trending__table">
+                            <tr>
+                                <th>SL No</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Return</th>
+                            </tr>
+                            <tr>
+                                <td>01.</td>
+                                <td>Trivago</td>
+                                <td>$520</td>
+                                <td class="positive">+5%</td>
+                            </tr>
+                            <tr>
+                                <td>02.</td>
+                                <td>Canon</td>
+                                <td>$480</td>
+                                <td class="positive">+10%</td>
+                            </tr>
+                            <tr>
+                                <td>03.</td>
+                                <td>Uber Food</td>
+                                <td>$350</td>
+                                <td class="negative">-3%</td>
+                            </tr>
+                            <tr>
+                                <td>04.</td>
+                                <td>Nokia</td>
+                                <td>$940</td>
+                                <td class="positive">+2%</td>
+                            </tr>
+                            <tr>
+                                <td>05.</td>
+                                <td>TikTok</td>
+                                <td>$670</td>
+                                <td class="negative">-12%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../script/sidebar.js"></script>
+</body>
+
+</html>

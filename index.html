@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/icons/short-logo.svg" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/sidebar-menu.css" />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <link rel="stylesheet" href="./styles/account.css" />
+    <link rel="stylesheet" href="./styles/investments.css" />
+    <link rel="stylesheet" href="./styles/credit-cards.css" />
+    <link rel="stylesheet" href="./styles/loans.css" />
+    <link rel="stylesheet" href="./styles/services.css"/>
+    <link rel="stylesheet" href="./styles/setting.css" />
+    <title>BankDash</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__main-wrapper">
+            <div class="header__burger-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
+            <div class="header__left">
+                <img src="./assets/icons/main-Logo.svg" alt="main-logo" />
+                <div class="border"></div>
+                <h1 class="header__title">Overview</h1>
+            </div>
+            <div class="header__right">
+                <div class="header__inputs">
+                    <form action="#" class="header__search">
+                        <input type="search" placeholder="Search for something" class="header__search-input" />
+                    </form>
+                </div>
+                <button class="button-style">
+                    <img src="./assets/icons/settings-02.svg" alt="settings" class="button-style__icon" />
+                </button>
+                <button class="button-style">
+                    <img src="./assets/icons/notification.svg" alt="notifications" class="button-style__icon" />
+                </button>
+                <a href="./pages/setting.html">
+                    <img class="header__profile-picture" src="./assets/images/avatar-image.png" alt="profile-picture" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="overlay"></div>
+
+    <aside class="side-menu" id="side-bar">
+        <div class="aside__main-wrapper">
+            <div class="aside__bottom">
+                <nav>
+                    <ul class="nav__options">
+                        <li>
+                            <a href="./index.html" class="nav__option active">
+                                <img src="./assets/icons/home.svg" alt="icon" class="side-menu__icons" />
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/transactions.html" class="nav__option">
+                                <img src="./assets/icons/transfer.svg" alt="icon" class="side-menu__icons" />
+                                <p>Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/accounts.html" class="nav__option">
+                                <img src="./assets/icons/user.svg" alt="icon" class="side-menu__icons" />
+                                <p>Accounts</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/investments.html" class="nav__option">
+                                <img src="./assets/icons/economic.svg" alt="icon" class="side-menu__icons" />
+                                <p>Investments</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/credit-cards.html" class="nav__option">
+                                <img src="./assets/icons/credit.svg" alt="icon" class="side-menu__icons" />
+                                <p>Credit Cards</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/loans.html" class="nav__option">
+                                <img src="./assets/icons/loan.svg" alt="icon" class="side-menu__icons" />
+                                <p>Loans</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/services.html" class="nav__option">
+                                <img src="./assets/icons/service.svg" alt="icon" class="side-menu__icons" />
+                                <p>Services</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/privileges.html" class="nav__option">
+                                <img src="./assets/icons/econometrics.svg" alt="icon" class="side-menu__icons" />
+                                <p>My Privileges</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pages/setting.html" class="nav__option">
+                                <img src="./assets/icons/settings.svg" alt="icon" class="side-menu__icons" />
+                                <p>Setting</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section class="my-cards">
+            <div class="my-cards__main-wrapper">
+                <div class="my-card__left">
+                    <div class="my-card__heading">
+                        <h2 class="h2--style">My Cards</h2>
+                        <p>See All</p>
+                    </div>
+                    <div class="my-cards__wrapper">
+                        <div class="my-card__card card">
+                            <div class="card__top">
+                                <div class="card__balance">
+                                    <p class="card__balance-text">Balance</p>
+                                    <p class="card__balance-amount">$5,756</p>
+                                </div>
+                                <img src="./assets/icons/Chip_Card.svg" alt="chip" />
+                            </div>
+                            <div class="card__middle">
+                                <div class="card__name-wrapper">
+                                    <p class="card__holder">CARD HOLDER</p>
+                                    <p class="card__name">Eddy Cusuma</p>
+                                </div>
+                                <div class="card__validity">
+                                    <p class="card__valid">VALID THRU</p>
+                                    <p class="card__date">12/22</p>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <p class="card__code">3778 **** **** 1234</p>
+                                <img src="./assets/icons/debit.svg" alt="mastercard" />
+                            </div>
+                        </div>
+
+                        <div class="my-card__card-2 card-2">
+                            <div class="card__top">
+                                <div class="card__balance">
+                                    <p class="card__balance-text-2">Balance</p>
+                                    <p class="card__balance-amount-2">$5,756</p>
+                                </div>
+                                <img src="./assets/icons/Chip_Card-black.svg" alt="chip" />
+                            </div>
+                            <div class="card__middle">
+                                <div class="card__name-wrapper">
+                                    <p class="card__holder-2">CARD HOLDER</p>
+                                    <p class="card__name-2">Eddy Cusuma</p>
+                                </div>
+                                <div class="card__validity">
+                                    <p class="card__valid-2">VALID THRU</p>
+                                    <p class="card__date-2">12/22</p>
+                                </div>
+                            </div>
+                            <div class="card__bottom-2">
+                                <p class="card__code-2">3778 **** **** 1234</p>
+                                <img src="./assets/icons/debit-2-black.svg" alt="mastercard" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-card__right">
+                    <h2 class="h2--style">Recent Transactions</h2>
+                    <div class="recent-transactions">
+                        <div class="transactions__line">
+                            <div class="transactions__logo">
+                                <img src="./assets/icons/credit-card.svg" alt="icon" />
+                            </div>
+                            <div class="transactions__text">
+                                <p class="deposit">Deposit from my Card</p>
+                                <p class="date">28 January 2021</p>
+                            </div>
+                            <div class="transactions__money negative">-$850</div>
+                        </div>
+                        <div class="transactions__line">
+                            <div class="transactions__logo">
+                                <img src="./assets/icons/deposit-paypal.svg" alt="icon" />
+                            </div>
+                            <div class="transactions__text">
+                                <p class="deposit">Deposit Paypal</p>
+                                <p class="date">25 January 2021</p>
+                            </div>
+                            <div class="transactions__money positive">+$2,500</div>
+                        </div>
+                        <div class="transactions__line">
+                            <div class="transactions__logo">
+                                <img src="./assets/icons/jemi.svg" alt="icon" />
+                            </div>
+                            <div class="transactions__text">
+                                <p class="deposit">Jemi Wilson</p>
+                                <p class="date">21 January 2021</p>
+                            </div>
+                            <div class="transactions__money positive">+$2,500</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistics">
+            <div class="statiscits__main-wrapper">
+                <div class="statiscits__left">
+                    <h2 class="h2--style">Weeky Activity</h2>
+                    <div class="weekly-activity__wrapper">
+                        <div class="statistics__info">
+                            <div class="diposit">
+                                <div class="circle__green"></div>
+                                <p class="diposit-text">Diposit</p>
+                            </div>
+                            <div class="withrdaw">
+                                <div class="circle__pink"></div>
+                                <p class="withdraw-text">Withdraw</p>
+                            </div>
+                        </div>
+                        <img src="./assets/icons/analitics.svg" alt="chart" />
+                    </div>
+                </div>
+                <div class="statistics__right">
+                    <h2 class="h2--style">Expense Statistics</h2>
+                    <div class="pie-chart">
+                        <img src="./assets/icons/pie-chart.svg" alt="pie-chart" class="pie-chart-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="transfer-history">
+            <div class="transfer-history__main-wrapper">
+                <div class="transfer">
+                    <h2 class="h2--style">Quick Transfer</h2>
+                    <div class="transfer__card">
+                        <div class="transfer__profiles">
+                            <div class="transfer__profile">
+                                <img src="./assets/images/profile-pic-1.png" alt="profile" />
+                                <h4>Livia Bator</h4>
+                                <p>CEO</p>
+                            </div>
+
+                            <div class="transfer__profile">
+                                <img src="./assets/images/profile-pic-2.png" alt="profile" />
+                                <h4>Randy Press</h4>
+                                <p>Director</p>
+                            </div>
+
+                            <div class="transfer__profile">
+                                <img src="./assets/images/profile-pic-3.png" alt="profile" />
+                                <h4>Workman</h4>
+                                <p>Designer</p>
+                            </div>
+
+                            <img class="button-next" alt="icon" src="./assets/icons/next.svg" />
+
+                        </div>
+                        <div class="transfer__amount">
+                            <p class="transfer__amount-text">Write Ammount</p>
+                            <form action="#" class="transfer__amount-form">
+                                <input type="text" class="transfer__amount-input" placeholder="525.50" name="amount" />
+                                <button type="submit" class="transfer__amount-send">
+                                    Send
+                                    <img class="transfer__button" alt="icon" src="./assets/icons/send.svg" />
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="history">
+                    <h2 class="h2--style">Balance History</h2>
+                    <div class="history__main-wrapper">
+                        <img src="./assets/icons/history.svg" alt="chart" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script/sidebar.js"></script>
+</body>
+
+</html>

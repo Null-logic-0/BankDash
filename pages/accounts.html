@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/icons/short-logo.svg" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/sidebar-menu.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/transactions.css" />
+    <link rel="stylesheet" href="../styles/account.css" />
+    <link rel="stylesheet" href="../styles/investments.css" />
+    <link rel="stylesheet" href="../styles/credit-cards.css" />
+    <link rel="stylesheet" href="../styles/loans.css" />
+    <link rel="stylesheet" href="../styles/services.css"/>
+    <link rel="stylesheet" href="../styles/setting.css" />
+    <title>BankDash-Accounts</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__main-wrapper">
+            <div class="header__burger-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
+            <div class="header__left">
+                <img src="../assets/icons/main-Logo.svg" alt="main-logo" />
+                <div class="border"></div>
+                <h1 class="header__title">Accounts</h1>
+            </div>
+            <div class="header__right">
+                <div class="header__inputs">
+                    <form action="#" class="header__search">
+                        <input type="search" placeholder="Search for something" class="header__search-input" />
+                    </form>
+                </div>
+                <button class="button-style">
+                    <img src="../assets/icons/settings-02.svg" alt="settings" class="button-style__icon" />
+                </button>
+                <button class="button-style">
+                    <img src="../assets/icons/notification.svg" alt="notifications" class="button-style__icon" />
+                </button>
+                <a href="../pages/setting.html">
+                    <img class="header__profile-picture" src="../assets/images/avatar-image.png"
+                        alt="profile-picture" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <div class="overlay"></div>
+
+    <aside class="side-menu" id="side-menu">
+        <div class="aside__main-wrapper">
+            <div class="aside__bottom">
+                <nav>
+                    <ul class="nav__options">
+                        <li>
+                            <a href="../index.html" class="nav__option">
+                                <img src="../assets/icons/home.svg" alt="icon" class="side-menu__icons" />
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/transactions.html" class="nav__option">
+                                <img src="../assets/icons/transfer.svg" alt="icon" class="side-menu__icons" />
+                                <p>Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/accounts.html" class="nav__option active">
+                                <img src="../assets/icons/user.svg" alt="icon" class="side-menu__icons" />
+                                <p>Accounts</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/investments.html" class="nav__option">
+                                <img src="../assets/icons/economic.svg" alt="icon" class="side-menu__icons" />
+                                <p>Investments</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/credit-cards.html" class="nav__option">
+                                <img src="../assets/icons/credit.svg" alt="icon" class="side-menu__icons" />
+                                <p>Credit Cards</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/loans.html" class="nav__option">
+                                <img src="../assets/icons/loan.svg" alt="icon" class="side-menu__icons" />
+                                <p>Loans</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/services.html" class="nav__option">
+                                <img src="../assets/icons/service.svg" alt="icon" class="side-menu__icons" />
+                                <p>Services</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/privileges.html" class="nav__option">
+                                <img src="../assets/icons/econometrics.svg" alt="icon" class="side-menu__icons" />
+                                <p>My Privileges</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/setting.html" class="nav__option">
+                                <img src="../assets/icons/settings.svg" alt="icon" class="side-menu__icons" />
+                                <p>Setting</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section class="expenses-section">
+            <div class="expenses__main-wrapper">
+                <div class="expenses__card">
+                    <img src="../assets/icons/money.svg" alt="my-balance" />
+                    <div class="expenses__card-text">
+                        <p class="expenses__type">My Balance</p>
+                        <p class="expenses__expense">$12,750</p>
+                    </div>
+                </div>
+                <div class="expenses__card">
+                    <img src="../assets/icons/income.svg" alt="income" />
+                    <div class="expenses__card-text">
+                        <p class="expenses__type">Income</p>
+                        <p class="expenses__expense">$5,600</p>
+                    </div>
+                </div>
+                <div class="expenses__card">
+                    <img src="../assets/icons/Expense.svg" alt="expenses" />
+                    <div class="expenses__card-text">
+                        <p class="expenses__type">Expense</p>
+                        <p class="expenses__expense">$3,460</p>
+                    </div>
+                </div>
+
+                <div class="expenses__card">
+                    <img src="../assets/icons/Saving.svg" alt="expenses" />
+                    <div class="expenses__card-text">
+                        <p class="expenses__type">Total Saving</p>
+                        <p class="expenses__expense">$7,920</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="last-transactions__section">
+            <div class="last-transactions__main-wrapper">
+                <div class="transactions__wrapper">
+                    <h2 class="h2--style">Last Transaction</h2>
+                    <div class="last-transactions__card">
+                        <div class="last-transaction__row">
+                            <div class="last-transaction__icon-wrapper">
+                                <img src="../assets/icons/renew.svg" alt="renew" class="last-transaction__icon" />
+                                <div class="last-transaction__infos">
+                                    <p class="last-transaction__name">Spotify Subscription</p>
+                                    <p class="last-transaction__date">25 Jan 2021</p>
+                                </div>
+                            </div>
+                            <p class="last-transaction__type">Shopping</p>
+                            <p class="last-transaction__credit-card">1234 ****</p>
+                            <p class="last-transaction__completion">Pending</p>
+                            <p class="last-transaction__price negative">-$150</p>
+                        </div>
+
+                        <div class="last-transaction__row">
+                            <div class="last-transaction__icon-wrapper">
+                                <img src="../assets/icons/tools.svg" alt="renew" class="last-transaction__icon" />
+                                <div class="last-transaction__infos">
+                                    <p class="last-transaction__name">Mobile Service</p>
+                                    <p class="last-transaction__date">25 Jan 2021</p>
+                                </div>
+                            </div>
+                            <p class="last-transaction__type">Service</p>
+                            <p class="last-transaction__credit-card">1234 ****</p>
+                            <p class="last-transaction__completion">Completed</p>
+                            <p class="last-transaction__price negative">-$340</p>
+                        </div>
+
+                        <div class="last-transaction__row">
+                            <div class="last-transaction__icon-wrapper">
+                                <img src="../assets/icons/user-red.svg" alt="renew" class="last-transaction__icon" />
+                                <div class="last-transaction__infos">
+                                    <p class="last-transaction__name">Emilly Wilson</p>
+                                    <p class="last-transaction__date">25 Jan 2021</p>
+                                </div>
+                            </div>
+                            <p class="last-transaction__type">Transfer</p>
+                            <p class="last-transaction__credit-card">1234 ****</p>
+                            <p class="last-transaction__completion">Completed</p>
+                            <p class="last-transaction__price positive">+$780</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="my-card__heading">
+                        <h2 class="h2--style">My Cards</h2>
+                        <a href="#">See All</a>
+                    </div>
+                    <div class="my-card__card card">
+                        <div class="card__top">
+                            <div class="card__balance">
+                                <p class="card__balance-text">Balance</p>
+                                <p class="card__balance-amount">$5,756</p>
+                            </div>
+                            <img src="../assets/icons/Chip_Card.svg" alt="chip" />
+                        </div>
+                        <div class="card__middle">
+                            <div class="card__name-wrapper">
+                                <p class="card__holder">CARD HOLDER</p>
+                                <p class="card__name">Eddy Cusuma</p>
+                            </div>
+                            <div class="card__validity">
+                                <p class="card__valid">VALID THRU</p>
+                                <p class="card__date">12/22</p>
+                            </div>
+                        </div>
+                        <div class="card__bottom">
+                            <p class="card__code">3778 **** **** 1234</p>
+                            <img src="../assets/icons/debit.svg" alt="mastercard" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="debit-invoices">
+            <div class="debit-invoices__main-wrapper">
+                <div class="debit">
+                    <h2 class="h2--style">Debit &amp; Credit Overview</h2>
+                    <div class="debit__wrapper">
+                        <img src="../assets/icons/analitics-3.svg" alt="analitics" />
+                    </div>
+                </div>
+                <div class="invoices">
+                    <h2 class="h2--style">Invoices Sent</h2>
+                    <div class="invoices__wrapper">
+                        <div class="invoices__row">
+                            <div class="invoices__icon-text">
+                                <img src="../assets/icons/apple.svg" alt="apple" />
+                                <div class="invoices__name-time">
+                                    <p class="invoices__name">Apple Store</p>
+                                    <p class="invoices__time">5h ago</p>
+                                </div>
+                            </div>
+                            <p class="invoices__price">$450</p>
+                        </div>
+
+                        <div class="invoices__row">
+                            <div class="invoices__icon-text">
+                                <img src="../assets/icons/user-yellow.svg" alt="profile" />
+                                <div class="invoices__name-time">
+                                    <p class="invoices__name">Michael</p>
+                                    <p class="invoices__time">2 days ago</p>
+                                </div>
+                            </div>
+                            <p class="invoices__price">$160</p>
+                        </div>
+
+                        <div class="invoices__row">
+                            <div class="invoices__icon-text">
+                                <img src="../assets/icons/playstation.svg" alt="playstation" />
+                                <div class="invoices__name-time">
+                                    <p class="invoices__name">Playstation</p>
+                                    <p class="invoices__time">5 days ago</p>
+                                </div>
+                            </div>
+                            <p class="invoices__price">$1085</p>
+                        </div>
+
+                        <div class="invoices__row">
+                            <div class="invoices__icon-text">
+                                <img src="../assets/icons/user2-red.svg" alt="profile" />
+                                <div class="invoices__name-time">
+                                    <p class="invoices__name">William</p>
+                                    <p class="invoices__time">10 days agp</p>
+                                </div>
+                            </div>
+                            <p class="invoices__price">$90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../script/sidebar.js"></script>
+</body>
+
+</html>

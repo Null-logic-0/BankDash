@@ -1,0 +1,85 @@
+/* || preferences section */
+
+
+.preferences-main-wrapper {
+    min-height: 530px;
+
+}
+
+
+.settings__form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+
+
+/* notification section */
+
+.notification-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding: 70px;
+    
+}
+
+
+.notification-wrapper__title {
+    color: #333B69;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.notification__txt {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* toggle button */
+
+
+.notification-wrapper__btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+
+}
+
+.toggle-btn {
+    background-color: #DFEAF2;
+    width: 56px;
+    height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.toggle-btn::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 2px;
+    transition: 0.2s;
+}
+
+.toggle-btn__input:checked+.toggle-btn {
+    background-color: #16DBCC;
+}
+
+.toggle-btn__input:checked+.toggle-btn::before {
+    transform: translatex(25px);
+}
+
+.toggle-btn__input {
+    display: none;
+}

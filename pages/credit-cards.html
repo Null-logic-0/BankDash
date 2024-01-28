@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka_Tchelidze" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/icons/short-logo.svg" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/sidebar-menu.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/transactions.css" />
+    <link rel="stylesheet" href="../styles/account.css" />
+    <link rel="stylesheet" href="../styles/investments.css" />
+    <link rel="stylesheet" href="../styles/credit-cards.css" />
+    <link rel="stylesheet" href="../styles/loans.css" />
+    <link rel="stylesheet" href="../styles/services.css"/>
+    <link rel="stylesheet" href="../styles/setting.css" />
+    <title>BankDash-Credit-cards</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__main-wrapper">
+            <div class="header__burger-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </div>
+            <div class="header__left">
+                <img src="../assets/icons/main-Logo.svg" alt="main-logo" />
+                <div class="border"></div>
+                <h1 class="header__title">Credit-cards</h1>
+            </div>
+            <div class="header__right">
+                <div class="header__inputs">
+                    <form action="#" class="header__search">
+                        <input type="search" placeholder="Search for something" class="header__search-input" />
+                    </form>
+                </div>
+                <button class="button-style">
+                    <img src="../assets/icons/settings-02.svg" alt="settings" class="button-style__icon" />
+                </button>
+                <button class="button-style">
+                    <img src="../assets/icons/notification.svg" alt="notifications" class="button-style__icon" />
+                </button>
+                <a href="../pages/setting.html">
+                    <img class="header__profile-picture" src="../assets/images/avatar-image.png"
+                        alt="profile-picture" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <div class="overlay"></div>
+
+    <aside class="side-menu" id="side-menu">
+        <div class="aside__main-wrapper">
+            <div class="aside__bottom">
+                <nav>
+                    <ul class="nav__options">
+                        <li>
+                            <a href="../index.html" class="nav__option">
+                                <img src="../assets/icons/home.svg" alt="icon" class="side-menu__icons" />
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/transactions.html" class="nav__option">
+                                <img src="../assets/icons/transfer.svg" alt="icon" class="side-menu__icons" />
+                                <p>Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/accounts.html" class="nav__option">
+                                <img src="../assets/icons/user.svg" alt="icon" class="side-menu__icons" />
+                                <p>Accounts</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/investments.html" class="nav__option">
+                                <img src="../assets/icons/economic.svg" alt="icon" class="side-menu__icons" />
+                                <p>Investments</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/credit-cards.html" class="nav__option active">
+                                <img src="../assets/icons/credit.svg" alt="icon" class="side-menu__icons" />
+                                <p>Credit Cards</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/loans.html" class="nav__option">
+                                <img src="../assets/icons/loan.svg" alt="icon" class="side-menu__icons" />
+                                <p>Loans</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/services.html" class="nav__option">
+                                <img src="../assets/icons/service.svg" alt="icon" class="side-menu__icons" />
+                                <p>Services</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privileges.html" class="nav__option">
+                                <img src="../assets/icons/econometrics.svg" alt="icon" class="side-menu__icons" />
+                                <p>My Privileges</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/setting.html" class="nav__option">
+                                <img src="../assets/icons/settings.svg" alt="icon" class="side-menu__icons" />
+                                <p>Setting</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section class="all-cards">
+            <h2 class="h2--style">My Cards</h2>
+            <div class="all-cards__wrapper">
+                <div class="my-card__card-3 card">
+                    <div class="card__top">
+                        <div class="card__balance">
+                            <p class="card__balance-text">Balance</p>
+                            <p class="card__balance-amount">$5,756</p>
+                        </div>
+                        <img src="../assets/icons/Chip_Card.svg" alt="chip" />
+                    </div>
+                    <div class="card__middle">
+                        <div class="card__name-wrapper">
+                            <p class="card__holder">CARD HOLDER</p>
+                            <p class="card__name">Eddy Cusuma</p>
+                        </div>
+                        <div class="card__validity">
+                            <p class="card__valid">VALID THRU</p>
+                            <p class="card__date">12/22</p>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__code">3778 **** **** 1234</p>
+                        <img src="../assets/icons/debit.svg" alt="mastercard" />
+                    </div>
+                </div>
+
+                <div class="my-card__card card">
+                    <div class="card__top">
+                        <div class="card__balance">
+                            <p class="card__balance-text">Balance</p>
+                            <p class="card__balance-amount">$5,756</p>
+                        </div>
+                        <img src="../assets/icons/Chip_Card.svg" alt="chip" />
+                    </div>
+                    <div class="card__middle">
+                        <div class="card__name-wrapper">
+                            <p class="card__holder">CARD HOLDER</p>
+                            <p class="card__name">Eddy Cusuma</p>
+                        </div>
+                        <div class="card__validity">
+                            <p class="card__valid">VALID THRU</p>
+                            <p class="card__date">12/22</p>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__code">3778 **** **** 1234</p>
+                        <img src="../assets/icons/debit.svg" alt="mastercard" />
+                    </div>
+                </div>
+
+                <div class="my-card__card-2 card">
+                    <div class="card__top">
+                        <div class="card__balance">
+                            <p class="card__balance-text-2">Balance</p>
+                            <p class="card__balance-amount-2">$5,756</p>
+                        </div>
+                        <img src="../assets/icons/grey-chip.svg" alt="chip" />
+                    </div>
+                    <div class="card__middle">
+                        <div class="card__name-wrapper">
+                            <p class="card__holder-2">CARD HOLDER</p>
+                            <p class="card__name-2">Eddy Cusuma</p>
+                        </div>
+                        <div class="card__validity">
+                            <p class="card__valid-2">VALID THRU</p>
+                            <p class="card__date-2">12/22</p>
+                        </div>
+                    </div>
+                    <div class="card__bottom-2">
+                        <p class="card__code-2">3778 **** **** 1234</p>
+                        <img src="../assets/icons/grey-debit.svg" alt="mastercard" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-info">
+            <div class="card-info__main-wrapper">
+                <div class="card-statistics">
+                    <h2 class="h2--style">Card Expense Statistics</h2>
+                    <div class="card-statistics__wrapper">
+                        <div class="card-statistcs__image">
+                            <img src="../assets/icons/card-expese-statics.svg" alt="statistic" />
+                        </div>
+                        <div class="card-statistics__statistics">
+                            <div class="card-statistics__statistics-side">
+                                <div class="card-statistics__statistic">
+                                    <div class="card-statistics__circle circle-1"></div>
+                                    <p class="card-statistics__info">DBL Bank</p>
+                                </div>
+                                <div class="card-statistics__statistic">
+                                    <div class="card-statistics__circle circle-2"></div>
+                                    <p class="card-statistics__info">ABM Bank</p>
+                                </div>
+                            </div>
+                            <div class="card-statistics__statistics-side">
+                                <div class="card-statistics__statistic">
+                                    <div class="card-statistics__circle circle-3"></div>
+                                    <p class="card-statistics__info">BRC Bank</p>
+                                </div>
+                                <div class="card-statistics__statistic">
+                                    <div class="card-statistics__circle circle-4"></div>
+                                    <p class="card-statistics__info">MCP Bank</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-list">
+                    <h2 class="h2--style">Card List</h2>
+                    <div class="card-list__wrapper">
+                        <div class="card-list__row">
+                            <div class="card-list__row-icon-title">
+                                <img src="../assets/icons/card-type-blue.svg" alt="pay" />
+                                <div class="card-list__row-text">
+                                    <p class="card-list__row-heading">Card Type</p>
+                                    <p class="card-list__row-info">Secondary</p>
+                                </div>
+                            </div>
+
+                            <div class="card-list__row-text card-list__row-middle">
+                                <p class="card-list__row-heading">Bank</p>
+                                <p class="card-list__row-info">DBL Bank</p>
+                            </div>
+
+                            <div class="card-list__row-text card-number">
+                                <p class="card-list__row-heading">Card Numbrt</p>
+                                <p class="card-list__row-info">**** **** 5600</p>
+                            </div>
+
+                            <div class="card-list__row-text card-name">
+                                <p class="card-list__row-heading">Namain Card</p>
+                                <p class="card-list__row-info">William</p>
+                            </div>
+                            <a href="#" class="card-list__row-details">View Details</a>
+                        </div>
+
+                        <div class="card-list__row">
+                            <div class="card-list__row-icon-title">
+                                <img src="../assets/icons/card-type-red.png" alt="pay" />
+                                <div class="card-list__row-text">
+                                    <p class="card-list__row-heading">Card Type</p>
+                                    <p class="card-list__row-info">Secondary</p>
+                                </div>
+                            </div>
+
+                            <div class="card-list__row-text card-list__row-middle">
+                                <p class="card-list__row-heading">Bank</p>
+                                <p class="card-list__row-info">BRC Bank</p>
+                            </div>
+
+                            <div class="card-list__row-text card-number">
+                                <p class="card-list__row-heading">Card Numbrt</p>
+                                <p class="card-list__row-info">**** **** 4300</p>
+                            </div>
+
+                            <div class="card-list__row-text card-name">
+                                <p class="card-list__row-heading">Namain Card</p>
+                                <p class="card-list__row-info">Michel</p>
+                            </div>
+                            <a href="#" class="card-list__row-details">View Details</a>
+                        </div>
+
+                        <div class="card-list__row">
+                            <div class="card-list__row-icon-title">
+                                <img src="../assets/icons/card-type-yellow.svg" alt="Pay" />
+                                <div class="card-list__row-text">
+                                    <p class="card-list__row-heading">Card Type</p>
+                                    <p class="card-list__row-info">Secondary</p>
+                                </div>
+                            </div>
+
+                            <div class="card-list__row-text card-list__row-middle">
+                                <p class="card-list__row-heading">Bank</p>
+                                <p class="card-list__row-info">ABM Bank</p>
+                            </div>
+
+                            <div class="card-list__row-text card-number">
+                                <p class="card-list__row-heading">Card Numbrt</p>
+                                <p class="card-list__row-info">**** **** 7560</p>
+                            </div>
+
+                            <div class="card-list__row-text card-name">
+                                <p class="card-list__row-heading">Namain Card</p>
+                                <p class="card-list__row-info">Edward</p>
+                            </div>
+                            <a href="#" class="card-list__row-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-setting-section">
+            <div class="card-setting-section__main-wrapper">
+                <div class="add-card">
+                    <h2 class="h2--style">Add New Card</h2>
+                    <div class="add-card__wrapper">
+                        <p class="add-card__text">
+                            Credit Card generally means a plastic card issued by Scheduled
+                            Commercial Banks assigned to a Cardholder, with a credit limit,
+                            that can be used to purchase goods and services on credit or
+                            obtain cash advances.
+                        </p>
+                        <form action="#" class="add-card__form">
+                            <div class="add-card__input-wrapper">
+                                <label for="cardType">Card Type</label>
+                                <input type="text" class="input--style" placeholder="Classic" id="cardType"
+                                    name="cardType" required />
+                            </div>
+                            <div class="add-card__input-wrapper">
+                                <label for="name">Name On Card</label>
+                                <input type="text" class="input--style" id="name" name="name" placeholder="My cards"
+                                    required />
+                            </div>
+                            <div class="add-card__input-wrapper">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="number" class="input--style" placeholder="**** **** **** ****" id="cardNumber"
+                                    name="cardNumber" maxlength="16" required />
+                            </div>
+                            <div class="add-card__input-wrapper">
+                                <label for="date">Expiration Date</label>
+                                <input type="date" id="date" name="date" class="input--style" required />
+                            </div>
+                            <input type="submit" value="Add Card" class="button--style add-card__button" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card-settings">
+                    <h2 class="h2--style">Card Setting</h2>
+                    <div class="card-settings__main-wrapper">
+                        <div class="card-settings__row">
+                            <img src="../assets/icons/block-card.svg" alt="setting icon" />
+                            <div class="card-settings__setting">
+                                <p class="card-settings__name">Block Card</p>
+                                <p class="card-settings__description">
+                                    Instantly block your card
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-settings__row">
+                            <img src="../assets/icons/change-pin.png" alt="setting icon" />
+                            <div class="card-settings__setting">
+                                <p class="card-settings__name">Change Pin Code</p>
+                                <p class="card-settings__description">
+                                    Choose another pin code
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-settings__row">
+                            <img src="../assets/icons/Google-pay.svg" alt="setting icon" />
+                            <div class="card-settings__setting">
+                                <p class="card-settings__name">Add to Google Pay</p>
+                                <p class="card-settings__description">
+                                    Withdraw without any card
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-settings__row">
+                            <img src="../assets/icons/apple-pay.png" alt="setting icon" />
+                            <div class="card-settings__setting">
+                                <p class="card-settings__name">Add to Apple Pay</p>
+                                <p class="card-settings__description">
+                                    Withdraw without any card
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-settings__row">
+                            <img src="../assets/icons/apple-pay.png" alt="setting icon" />
+                            <div class="card-settings__setting">
+                                <p class="card-settings__name">Add to Apple Store</p>
+                                <p class="card-settings__description">
+                                    Withdraw without any card
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../script/sidebar.js"></script>
+</body>
+
+</html>
